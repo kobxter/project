@@ -1,0 +1,17 @@
+// ฟอนต์ต้องประกาศแยก ไม่ใช้ @import
+@use "sass:meta"; 
+
+// Variables
+@use 'variables';
+
+// Bootstrap ต้องมาเป็นอันดับสุดท้าย
+@use 'bootstrap';
+
+// โหลดฟอนต์จาก CSS ปกติ
+:root {
+    --font-family: 'Nunito', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}
